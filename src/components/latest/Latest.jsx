@@ -120,23 +120,7 @@ const Latest = () => {
             </div>
          
         </div>
-            <div className={styles.team} >
-                <h2 className={styles.h2}>We provide support to newly registered sellers</h2>
-                {users.length === 0 ? (<h3 className='info'>There are currently no registered sellers!</h3>) : (
-
-                    <div>
-                        <div className={styles["team-content"]} >
-                        {/* i want only last 6 fetch, not all */}
-                        {users.map((user) => (
-                        <LatestSeller key={user._id} user={user} />
-                        ))}
-
-                        </div>
-                    </div>
-
-                )}
-                
-            </div>
+        
  </div>
   )
 }
