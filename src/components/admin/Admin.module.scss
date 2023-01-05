@@ -1,0 +1,66 @@
+.h1,
+.h2,
+.h3 {
+  color: var(--foreground);
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.4;
+}
+
+.managePro{
+    width: 100%;
+}
+
+.product{
+    width: 100%; 
+}
+
+.table {
+    padding: 5px;
+    width: 100%;
+    overflow-x: auto;
+    height: fit-content;
+  
+    .search {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 1.4rem;
+  
+      thead {
+        border-top: 2px solid var(--foreground);
+        border-bottom: 2px solid var(--foreground);
+      }
+  
+      th {
+        border: 1px solid #eee;
+      }
+  
+      th,
+      td {
+        vertical-align: top;
+        text-align: center;
+        padding: 8px;
+        background: var(--background);
+        font-size: 16px;
+        &.icons {
+          > * {
+            margin-right: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+  
+      tr {
+        border-bottom: 1px solid #ccc;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #eee;
+      }
+    }
+  }
+  

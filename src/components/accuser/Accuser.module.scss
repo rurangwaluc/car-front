@@ -1,0 +1,613 @@
+.account-row {
+    background: var(--background);
+}
+
+.account-title {
+    text-align: center;
+    letter-spacing: 1.3px;
+    color: #1A9DF4;
+    margin-bottom: 50px;
+}
+
+.account-groups {
+    display: flex;
+    padding: 0 15px;
+}
+
+.account-group:first-child {
+    flex: 1;
+    margin: 0 10px;
+    
+}
+
+.account-group:last-child {
+    flex: 2;
+}
+.icon{
+    z-index: 10;
+}
+.account-group .file {
+    width: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #1A9DF4;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+.form-row{
+    border: 1px solid #1A9DF4;
+    border-radius: 14px;
+}
+.form-row.account {
+    margin: 20px 0;
+    min-height: unset;
+}
+
+.account-image {
+    display: block;
+    margin: 5px auto;
+    background-color: #f0f3bd;
+    padding: 5px 10px;
+    border: none;
+    box-shadow: 0 0 5px #f0f3bd;
+    color: #1A9DF4;
+    letter-spacing: 1.4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.account-image:hover {
+    background-color: #1A9DF4;
+    color: #f0f3bd;
+}
+
+.account-subtitle {
+    margin-bottom: 30px;
+    letter-spacing: 1.4px;
+    color: #1A9DF4;
+    text-align: center;
+}
+.products{
+    display: flex;
+}
+.account-products {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card-footer.account {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.account-orders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.account-orders h4 {
+    margin-bottom: 10px;
+}
+
+.account-orders h4:last-child {
+    margin-bottom: 40px;
+}
+
+.account-orders a.linkOrder {
+    margin-left: 50px;
+    transition: all 0.5s;
+}
+
+.account-orders a:hover {
+    filter: drop-shadow(0 0 1px #1A9DF4);
+}
+
+.form-image {
+    position: relative;
+}
+
+.form-image label {
+    position: absolute;
+    top: 0;
+    right: 30%;
+    font-size: 25px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 1px #1A9DF4);
+    transition: all 0.5s;
+}
+
+.form-image label:hover {
+    color: #ca2734;
+}
+.form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+    margin: 40px 0;
+    
+}
+
+.form-row .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row .form-group label {
+    letter-spacing: 1.4px;
+    color: var(--foreground);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-row .form-group input {
+    height: 40px;
+    width: 350px;
+    padding: 5px 15px;
+    border: 1px solid #1A9DF4;
+    border-radius: 14px;
+    letter-spacing: 1.3px;
+    color: #1A9DF4 !important;
+}
+
+.form-btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-btn button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #1A9DF4;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    letter-spacing: 1.3px;
+    transition: all 0.5s;
+    box-shadow: 0 0 5px #1A9DF4; 
+}
+
+.form-btn button:hover {
+    background-color: #ffffff;
+    color: #1A9DF4;
+}
+
+.form-footer {
+    margin-top: 20px;
+}
+
+.form-footer a {
+    display: flex;
+    justify-content: flex-end;
+    letter-spacing: 1.3px;
+    color: #ca2734;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+.logout {
+    position: relative;
+    margin: 0 20px;
+    text-shadow: 0 0 1px #485b63;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.change-password {
+    font-size: 12px;
+    color: #ca2734;
+    text-align: right;
+    cursor: pointer;
+}
+
+.change-password:hover {
+    text-decoration: underline;
+}
+
+.passwords {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background-color: #0000001e;
+}
+
+.passwords form {
+    width: 400px;
+    background: var(--background);
+    padding: 30px 10px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.passwords form .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.passwords form .form-group label {
+    margin-bottom: 5px;
+}
+
+.passwords form .form-group input {
+    height: 40px;
+    border: 1px solid #1A9DF4;
+    padding: 5px 15px;
+    outline: none;
+    color: #ca2734;
+}
+
+
+
+
+.featured-car-list {
+    display: grid;
+    grid-template-columns: repeat((2, 1fr));
+    gap:15px;
+  }
+  
+  .featured-car-card {
+    width: 100%;
+    background: var(--background);
+    border: 1px solid #1A9DF4;
+    border-radius: 18px;
+    padding: 10px;
+    position: relative;
+}
+
+.category{
+  position: absolute;
+  top: 7%;
+  right: 7%;
+  span{
+    background: #1A9DF4;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+}
+  
+  .featured-car-card .card-banner {
+    background: hsla(0, 0%, 0%, 0.2);
+    aspect-ratio: 3 / 2;
+    border-radius: 18px;
+    overflow: hidden;
+  }
+  
+  .featured-car-card .card-banner a >  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .featured-car-card .card-content { padding: 20px 10px 10px; }
+  
+  .featured-car-card .card-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .featured-car-card .card-title { width: calc(100% - 60px); }
+  
+  .featured-car-card .card-title > a {
+    color: inherit;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .featured-car-card .card-title > a:is(:hover, :focus) { color: #1A9DF4; }
+  
+  .featured-car-card .year {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 3px 12px;
+    border: 2px dashed #1A9DF4;
+    border-radius: 14px;
+  }
+  
+  .featured-car-card .card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #1A9DF4;
+    margin-bottom: 15px;
+  }
+  
+  .featured-car-card .card-list-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .featured-car-card .card-list-item ion-icon {
+    font-size: 20px;
+    color: #1A9DF4;
+    --ionicon-stroke-width: 38px;
+  }
+  
+  .featured-car-card .card-item-text {
+    color: var(--foreground);
+    font-size: 0.875rem;
+  }
+  
+  .featured-car-card .card-price-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 15px;
+  }
+  
+  .featured-car-card .card-price {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.575rem;
+    color: var(--foreground);
+  }
+  
+  .featured-car-card .card-price strong {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  
+  .featured-car-card .btn:last-child {
+    height: 36px;
+    min-width: 100%;
+  }
+  
+  .featured-car-card .fav-btn {
+    background: hsl(208, 86%, 92%);
+    color: hsl(204, 80%, 63%);
+    height: 36px;
+    width: 36px;
+
+  }
+  
+  .featured-car-card .fav-btn ion-icon { font-size: 18px; }
+  
+  .featured-car-card .fav-btn:is(:hover, :focus) {
+    background: hsl(336, 35%, 92%);
+    color: vhsl(0, 79%, 63%);
+  }
+
+.close-form {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -15px;
+    top: -15px;
+    width: 35px;
+    height: 35px;
+    background-color: #ca2734;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn-upload {
+    display: block;
+    margin: 5px auto;
+    background-color: #f0f3bd;
+    padding: 5px 10px;
+    border: none;
+    box-shadow: 0 0 5px #f0f3bd;
+    color: #1A9DF4;
+    letter-spacing: 1.4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    border: 1px solid #1A9DF4;
+}
+
+.btn-upload:hover {
+    background-color: #1A9DF4;
+    color: #f0f3bd;
+}
+
+.add-btn {
+    display: block;
+    margin: 0 0 30px auto;
+    padding: 5px 15px;
+    background-color: #1A9DF4;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    letter-spacing: 1.3px;
+    transition: all 0.5s;
+    box-shadow: 0 0 5px #1A9DF4;
+    font-size: 10px;
+}
+
+.add-btn:hover {
+    background-color: #ffffff;
+    color: #1A9DF4;
+}
+
+.form-image.product img {
+    width: 70px !important;
+    height: auto;
+}
+
+.orderContainer {
+    margin: 50px 5px;
+}
+
+.orderContainer .orderRow:first-child {
+    margin-bottom: 100px;
+}
+
+.orderContainer .orderRow h3 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.orderContainer .orderRow.products {
+    display: flex;
+}
+
+.orderContainer .orderRow.products .orderCol:first-child {
+    flex: 2;
+    padding: 0 10px;
+}
+
+.orderContainer .orderRow.products .orderCol:last-child {
+    flex: 1;
+}
+
+.orderContainer .orderRow.products .orderCol:first-child .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.orderContainer .back {
+    font-weight: bold;
+}
+
+.orderContainer .back:hover {
+    text-decoration: underline;
+}
+
+.infoGroups {
+    margin-bottom: 40px;
+    padding: 0 15px;
+}
+
+.info-group {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #1A9DF4;
+    margin-bottom: 5px;
+}
+
+.info-group span:nth-child(2) {
+    font-weight: bold;
+}
+
+.account-info {
+    margin-top: 100px;
+}
+
+.userInfoRow {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.account-orders .info.userOrders {
+    margin: 10px !important;
+}
+
+
+.filter-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.filter-pagination ul {
+    display: flex;
+}
+
+.filter-pagination ul li {
+    background-color: #1A9DF4;
+    border: 0.5px solid #1A9DF4;
+    padding: 5px;
+}
+
+.filter-pagination ul li:hover {
+    background-color: #1A9DF4;
+}
+
+.filter-pagination ul li:hover a {
+    color: #ffffff;
+}
+
+.filter-pagination ul li a {
+    padding: 15px;
+    font-weight: bold;
+}
+
+.pagi-active {
+    background-color: #1A9DF4;
+}
+
+.filter-pagination ul li.pagi-active a,
+.filter-pagination ul li:hover a {
+    color: #ffffff;
+}
+@media screen and (max-width: 630px){
+
+
+    .form-row .form-group input {
+        width: 350px !important;
+    }
+}
+@media screen and (max-width: 480px){
+    .featured-car-list {
+        display: grid;
+        grid-template-columns: repeat((1, 1fr)) !important;
+        gap:15px;
+        width: 100%;
+      }
+
+
+    .form-row .form-group input {
+        
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 768px){
+    .account-groups{
+       flex-direction: column;
+       padding: 0;
+    }
+
+    .form-row .form-group input {
+        width: 500px;
+    }
+    .featured-car-list {
+        display: grid;
+        grid-template-columns: repeat((2, 1fr));
+        gap:10px;
+        width: 100%;
+      }
+      .account-group:last-child {
+        padding: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1230px){
+    .form-row{
+        padding: 20px;
+    }
+}

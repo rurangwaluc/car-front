@@ -1,0 +1,12 @@
+.shop-wrapper{
+    background: var(--background);
+    padding: 20px 35px;
+    color: var(--foreground);
+    width: 100%;
+} 
+
+@media(max-width: 390px){
+    .shop-wrapper{
+        padding: 20px 15px;  
+    }
+}

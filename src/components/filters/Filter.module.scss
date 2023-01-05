@@ -1,0 +1,386 @@
+
+.filter-shop{
+    background: var(--background);
+    padding: 20px 25px;
+    color: var(--foreground);
+    width: 100%;
+}
+
+.filter-row {
+    padding: 50px 0px;
+    background: var(--background);
+}
+
+.filter-row .filter-col:first-child {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.filter-row .filter-col:first-child .filter-group:first-child button {
+    margin: 10px 15px;
+    background-color: #1A9DF4;
+    padding: 10px 25px;
+    border: none;
+    box-shadow: 0 0 5px #1A9DF4;
+    color: #ffffff;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.filter-row .filter-col:first-child .filter-group:first-child button:hover {
+    background-color: #ffffff;
+    color: #1A9DF4;
+    font-weight: 600;
+}
+
+.filter-row .filter-col:first-child .filter-group:last-child input {
+    padding: 10px 25px;
+    border: 1px solid #1A9DF4;
+    border-radius: 14px;
+    width: 150px;
+    outline: none;
+    letter-spacing: 1.4px;
+    color: #2f5f74;
+    transition: all 0.7s;
+}
+
+.filter-row .filter-col:first-child .filter-group:last-child input:focus {
+    width: 300px;
+}
+
+.filter-row .filter-col:first-child .filter-group:last-child button {
+    background-color: #1A9DF4;
+    padding: 10px 25px;
+    border: none;
+    box-shadow: 0 0 5px #1A9DF4;
+    color: #ffffff;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.filter-row .filter-col:first-child .filter-group:last-child button:hover {
+    background-color: #ffffff;
+    color: #1A9DF4;
+}
+
+.filter-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px 20px;
+    margin-bottom: 50px;
+}
+
+.filter-card {
+    width: 250px;
+    border-bottom: 1px dashed #485b63;
+    transition: all 0.5s;
+}
+
+.filter-card:hover {
+    transform: scale(1.02);
+}
+
+.filter-row .filter-col:last-child .card-footer {
+    margin: 10px 0;
+}
+
+.filter-row .filter-col:last-child .card-footer button {
+    display: block;
+    margin: 0 auto;
+    background-color: #f0f3bd;
+    padding: 5px 10px;
+    border: none;
+    box-shadow: 0 0 5px #f0f3bd;
+    color: #1A9DF4;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.filter-row .filter-col:last-child button:hover {
+    background-color: #1A9DF4;
+    color: #f0f3bd;
+}
+
+.filter-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.filter-pagination ul {
+    display: flex;
+}
+
+.filter-pagination ul li {
+    background-color: #1A9DF4;
+    border: 0.5px solid #1A9DF4;
+    padding: 5px;
+}
+
+.filter-pagination ul li:hover {
+    background-color: #1A9DF4;
+}
+
+.filter-pagination ul li:hover a {
+    color: #ffffff;
+}
+
+.filter-pagination ul li a {
+    padding: 15px;
+    font-weight: bold;
+}
+
+.pagi-active {
+    background-color: #1A9DF4;
+}
+
+.filter-pagination ul li.pagi-active a,
+.filter-pagination ul li:hover a {
+    color: #ffffff;
+}
+.btn {
+    background: #1A9DF4;
+    color: #ffffff;
+    padding: 5px;
+    place-items: center;
+    border-radius: 14px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    overflow: hidden;
+    border: none;
+    outline: none;
+  }
+  .h1,
+  .h2,
+  .h3 {
+    color: var(--foreground);
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.4;
+  }
+  .featured-car .title-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px 15px;
+      margin-bottom: 30px;
+    }
+    
+    .featured-car-link {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--foreground);
+      font-size: 0.875rem;
+    }
+    
+    .featured-car-link span { transition: 0.5s ease; }
+    
+    .featured-car-link:is(:hover, :focus) span { color: hsl(240, 22%, 25%); }
+    
+    .featured-car-link ion-icon {
+      margin-top: 3px;
+      transition: 0.5s ease;
+    }
+    
+    .featured-car-link:is(:hover, :focus) ion-icon { color: #1A9DF4; }
+    
+    .featured-car-list {
+      display: grid;
+      grid-template-columns: repeat((3, 1fr));
+      gap:15px;
+    }
+    
+    .featured-car-card {
+      width: 100% !important;
+      background: var(--background);
+      border: 1px solid #1A9DF4;
+      border-radius: 18px;
+      padding: 10px;
+      position: relative;
+    }
+  
+    .category{
+      position: absolute;
+      top: 7%;
+      right: 7%;
+      span{
+        background: #1A9DF4;
+        color: #ffffff;
+        font-weight: 500;
+        padding: 5px 10px;
+        border-radius: 20px;
+      }
+    }
+    
+    .featured-car-card .card-banner {
+      background: hsla(0, 0%, 0%, 0.2);
+      aspect-ratio: 3 / 2;
+      border-radius: 18px;
+      overflow: hidden;
+    }
+    
+    .featured-car-card .card-banner a >  img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .featured-car-card .card-content { padding: 20px 10px 10px; }
+    
+    .featured-car-card .card-title-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 15px;
+    }
+    
+    .featured-car-card .card-title { width: calc(100% - 60px); }
+    
+    .featured-car-card .card-title > a {
+      color: inherit;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    .featured-car-card .card-title > a:is(:hover, :focus) { color: #1A9DF4; }
+    
+    .featured-car-card .year {
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 3px 12px;
+      border: 2px dashed #1A9DF4;
+      border-radius: 14px;
+    }
+    
+    .featured-car-card .card-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      gap: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #1A9DF4;
+      margin-bottom: 15px;
+    }
+    
+    .featured-car-card .card-list-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .featured-car-card .card-list-item ion-icon {
+      font-size: 20px;
+      color: #1A9DF4;
+      --ionicon-stroke-width: 38px;
+    }
+    
+    .featured-car-card .card-item-text {
+      color: var(--foreground);
+      font-size: 0.875rem;
+    }
+    
+    .featured-car-card .card-price-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      gap: 15px;
+    }
+    
+    .featured-car-card .card-price {
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.575rem;
+      color: var(--foreground);
+    }
+    
+    .featured-car-card .card-price strong {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+    
+    .featured-car-card .btn:last-child {
+      height: 36px;
+      min-width: 100%;
+    }
+    
+    .featured-car-card .fav-btn {
+      background: hsl(208, 86%, 92%);
+      color: hsl(204, 80%, 63%);
+      height: 36px;
+      width: 36px;
+  
+    }
+    
+    .featured-car-card .fav-btn ion-icon { font-size: 18px; }
+    
+    .featured-car-card .fav-btn:is(:hover, :focus) {
+      background: hsl(336, 35%, 92%);
+      color: vhsl(0, 79%, 63%);
+    }
+@media(max-width: 1200px){
+  .filter-shop{
+    padding: 20px 5px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+  .featured-car-list {
+    display: grid;
+    grid-template-columns: repeat((3, 1fr));
+  }
+}
+@media(max-width: 900px){
+  .filter-shop{
+    padding: 20px 0px;
+    width: 100%;
+    margin: 0 auto;
+}
+.featured-car-list {
+  display: grid;
+  grid-template-columns: repeat((2, 1fr));
+  gap:15px;
+}
+}
+
+@media(max-width: 768px){
+  .filter-row .filter-col:first-child {
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.filter-row .filter-col:first-child .filter-group:first-child{
+  text-align: center;
+  padding-top: 0;
+}
+.filter-group{
+  padding-top: 2rem;
+  // width: 100%;
+  margin: 0 auto;
+}
+.filter-row {
+  padding: 20px 0px;
+  background: var(--background);
+}
+}
+@media(max-width: 600px){
+
+
+  .filter-shop{
+    padding: 20px 0px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+  .featured-car-list {
+    display: grid;
+    grid-template-columns: repeat((1, 1fr));
+  }
+
+}

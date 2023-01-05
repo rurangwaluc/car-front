@@ -1,0 +1,170 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+html{
+
+    scroll-behavior: smooth;
+  
+    &::-webkit-scrollbar{
+        width: 10px;
+	background-color: #F5F5F5;
+    }
+  
+    &::-webkit-scrollbar-track{
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+        border-radius: 10px;
+    }
+  
+    &::-webkit-scrollbar-thumb{
+        background-color: #AAA;
+        border-radius: 10px;
+        background-image: -webkit-linear-gradient(90deg,
+                                                  rgba(0, 0, 0, .2) 25%,
+                                                  transparent 25%,
+                                                  transparent 50%,
+                                                  rgba(0, 0, 0, .2) 50%,
+                                                  rgba(0, 0, 0, .2) 75%,
+                                                  transparent 75%,
+                                                  transparent)
+    }
+
+    
+  }
+
+.mt{
+  margin-top: -90px !important;
+}
+.btns {
+  background: none;
+  border:0;
+}
+  .btn {
+    appearance: button;
+    background-color: #0b74b9;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: capitalize;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    // width: 100%;
+    padding: 10px 15px;
+  }
+  
+  .btn:after {
+    background-clip: padding-box;
+    background-color: #1A9DF4;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .btn:main,
+  .btn:focus {
+    user-select: auto;
+  }
+  
+  .btn:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  .btn:disabled {
+    cursor: auto;
+  }
+  .btn-red {
+    appearance: button;
+    background-color: #8a0611;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: capitalize;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding: 10px 15px;
+  }
+  
+  .btn-red:after {
+    background-clip: padding-box;
+    background-color: #CA2734;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+   
+  }
+  
+  .btn-red:main,
+  .btn-red:focus {
+    user-select: auto;
+  }
+  
+  .btn-red:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  .btn-red:disabled {
+    cursor: auto;
+  }
+
+  @media screen and (max-width: 1090px) {
+    .mt{
+      margin-top: -10px !important;
+    }
+  }
+
+  .info{
+    color: var(--foreground);
+    text-align: center;
+  }
