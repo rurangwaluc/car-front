@@ -127,7 +127,7 @@ const Latest = () => {
                     <div>
                         <div className={styles["team-content"]} >
                         {/* i want only last 6 fetch, not all */}
-                        {users.slice(-6).map((user) => (
+                        {users.map((user) => (
                         <LatestSeller key={user._id} user={user} />
                         ))}
 
